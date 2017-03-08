@@ -8,7 +8,6 @@ public class Empresa {
 	String nomeFantasia;
 	String endereco;
 	String telefone;
-
 	/*
 	 * Obtem cnpj
 	 */

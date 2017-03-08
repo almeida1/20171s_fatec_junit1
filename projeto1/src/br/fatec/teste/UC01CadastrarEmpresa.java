@@ -10,13 +10,10 @@ import br.fatec.modelo.Empresa;
 
 public class UC01CadastrarEmpresa {
 	public static Empresa empresa;
-
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		empresa = new Empresa();
-
 	}
-
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
@@ -42,6 +39,7 @@ public class UC01CadastrarEmpresa {
 	public void CT02UC01A3cnpj_invalido() {
 			empresa.setCnpj("");
 	}
+
 	/*
 	 * verifica a validação dos dados para nome de empresa invalido
 	 */
@@ -63,6 +61,7 @@ public class UC01CadastrarEmpresa {
 	public void CT05UC01A3endereco_invalido() {
 			empresa.setEndereco("");
 	}
+	
 	/*
 	 * verifica a validação dos dados para telefone invalido
 	 */
