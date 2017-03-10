@@ -39,47 +39,7 @@ public class UC01CadastrarEmpresa {
 	public void CT02UC01A3cnpj_invalido() {
 			empresa.setCnpj("");
 	}
-
-	/*
-	 * verifica a validação dos dados para nome de empresa invalido
-	 */
-	@Test(expected=IllegalArgumentException.class)
-	public void CT03UC01A3nome_da_empresa_invalido() {
-			empresa.setNomeDaEmpresa("");
-	}
-	/*
-	 * verifica a validação dos dados para nome fantasia invalido
-	 */
-	@Test(expected=IllegalArgumentException.class)
-	public void CT04UC01A3nome_fantasia_invalido() {
-			empresa.setNomeFantasia("");
-	}
-	/*
-	 * verifica a validação dos dados para endereco invalido
-	 */
-	@Test(expected=IllegalArgumentException.class)
-	public void CT05UC01A3endereco_invalido() {
-			empresa.setEndereco("");
-	}
 	
-	/*
-	 * verifica a validação dos dados para telefone invalido
-	 */
-	@Test(expected=IllegalArgumentException.class)
-	public void CT05UC01A3telefone_invalido() {
-			empresa.setTelefone("");
-	}
-	/*
-	 * verifica a validação dos dados para telefone invalido
-	 */
-	@Test
-	public void CT06UC01A3telefone_invalido() {
-		try{
-			empresa.setTelefone("");
-		}catch (IllegalArgumentException e){
-			assertEquals("Telefone inválido!",e.getMessage());
-		}
-	}
 }
 
 
